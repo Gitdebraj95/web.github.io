@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zone Watches.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f48230e5b1.js"></script>
+    <style>
+      @font-face {
+    font-family: 'JunctionRegular';
+    src: url('junction_02-webfont.eot');
+    src: url('junction_02-webfont.eot?#iefix') format('embedded-opentype'),
+         url('junction_02-webfont.woff') format('woff'),
+         url('junction_02-webfont.ttf') format('truetype'),
+         url('junction_02-webfont.svg#JunctionRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+    h1,h2,h3,h4,h5,h6{
+      font-family: 'JunctionRegular';
+    }
+    #left{
+      width: 50%;
+      float: left;
+    }
+    #right{
+      width: 50%;
+      float: right;
+      text-align: right;
+    }
+    .fa-solid{
+      font-size: 40px;
+    }
+    footer #sub:hover{
+        background-color: darkgoldenrod;
+    }
+    #footer li a:hover{
+      color: blueviolet;
+    }
+  </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: ghostwhite;"><strong>ZoneWatches</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Product.html" style="color: black;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Product about.html" style="color: ghostwhite;">About</a>
+        </li>
+        <li class="nav-item">Product contact.html" style="color: ghostwhite;">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="border-radius: 0%;">
+        <button class="btn btn-warning" type="submit" style="border-radius: 0%;">Search</button>
+      </form>
+      <!-- Button trigger modal login -->
+      <div class="mx-2">
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Login">
+        Login
+      </button></div>
+
+      <!-- Modal login -->
+      <div class="modal fade" id="Login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login to ZoneWatches</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email : name@example.com">
+              <label for="inputPassword2" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Enter your password">
+            </div>
+            <div class="form-group form-check" style="margin-left: 5px;" >
+            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2"> <label class="form-check-label" for="flexRadioDefault2">
+              I agree to all the Terms and Conditions.
+            </label></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" >Login</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Button trigger modal signup-->
+      <div class="mx">
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUp">
+        SignUp
+      </button></div>
+
+      <!-- Modal signup -->
+      <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">SignUp to ZoneWatches</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email : name@example.com">
+              <label for="inputPassword2" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Enter your password">
+              <label for="inputPassword3" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Enter your same password">
+              <br />
+              <div class="form-group form-check" >
+            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2"> <label class="form-check-label" for="flexRadioDefault2">
+              I agree to all the Terms and Conditions.
+            </label></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="carousel 1.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="carousel 2.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="carousel 3.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="carousel 4.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="carousel 5.jpg" class="d-block w-100">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container my-4" style="background-color: blanchedalmond;">
+<h2><center>SHOP  BY  CATEGORY</center></h2>
+</div>
+<div class="container my-3">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="card 2.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="350"/><div class="d-flex p-2" style="background-color: blanchedalmond;"><strong><h5>SPECIAL OFFERS</h5></strong></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="card 3.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="350"/><div class="d-flex p-2" style="background-color: blanchedalmond;"><strong><h5>WATCHES FOR MEN</h5></strong></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="card 4.jpg" class="bd-placeholder-img card-img-top" width="100%" height="350"/><div class="d-flex p-2" style="background-color: blanchedalmond;"><strong><h5>WATCHES FOR WOMEN</h5></strong></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="card 5.jpg" class="bd-placeholder-img card-img-top" width="100%" height="350"/><div class="d-flex p-2" style="background-color: blanchedalmond;"><strong><h5>ACCESSORIES</h5></strong></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="whatsNew_wrapper p-5 mb-20 rounded-3" style="background:url('jumbotron.jpg') no-repeat top center;cursor:pointer;">
+  <div class="container">
+    <div class="row whats-txt-img">
+      <div class="whatsNew_content">
+        <h1 class="display-5" style="color: ghostwhite;">BLACK FRIDAY JUMBO OFFER</h1>
+        <p class="col-md-8 fs-4" style="color: ghostwhite;">GET THE BEST GENUINE LUXURIOUS WATCHES NOW AT YOUR OWN BUDGET</p>
+        <button class="btn btn-primary btn-lg" type="button">50 % OFF</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-4" style="background-color: blanchedalmond; padding-top: 10px; padding-bottom: 5px;">
+<h2><center>FEATURED   WATCHES</center></h2>
+</div>
+<div class="container my-3">
+
+      <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 g-3">
+        <div class="col">
+          <div class="card">
+            <img src="watch 1.jpg"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Czapek Bergues</strong>&nbsp;&nbsp;&nbsp;<p>QuaiDes</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 15,50,000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 2.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Arnold & son</strong>&nbsp;&nbsp;&nbsp;<p>Globetrotter</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 13,16,000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 3.jpg" class="bd-placeholder-img card-img-top" width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Frederique Constant</strong>&nbsp;&nbsp;&nbsp;<p>Classics</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 76,100</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 4.jpg" class="bd-placeholder-img card-img-top" width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Zenith and Defys</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Defy</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 6,79,400</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 5.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Louis Moinet</strong>&nbsp;&nbsp;&nbsp;<p>Mechanical</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 47,50,000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 6.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>H . Moser & Cie.</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Pioneer</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 75,90,000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 7.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Graham</strong>&nbsp;&nbsp;&nbsp;<p>Chrono Vintage</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 5,57,000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 8.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Graham</strong>&nbsp;&nbsp;&nbsp;<p>Chrono Oversize</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 6,04,000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 9.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Girard</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Perregaux Bridges</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 25,46,000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 10.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Frederique</strong>&nbsp;&nbsp;<p>Classics Constant</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 67,600</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 11.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Carl F.</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Monero Bucherer</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 5,20,000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="watch 12.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="300"/><div class="d-flex p-4" style="background-color: blanchedalmond;"><strong>Carl F.</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>Patravi Bucherer</p></div>
+            <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-lg btn-outline-success">₹ 5,39,000</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="whatsNew_wrapper p-5 mb-20 rounded-3" style="background:url('jumbotron 2.jpg') no-repeat top center;cursor:pointer;">
+  <div class="container">
+    <div class="row whats-txt-img">
+      <div class="whatsNew_content">
+        <h4 style="color: ghostwhite;">------ WHAT'S NEW ------</h4>
+        <h1 style="color: ghostwhite;">235</h1>
+        <h4 style="color: ghostwhite;">NEW ARRIVALS</h4>
+        <br /><br /><br /><br /><br />
+        <p style="color: ghostwhite;"> -- NORQAIN -- MAURICE -- LACROIX -- RAYMOND WEIL -- </p>
+        <p style="color: ghostwhite;"> -- OMEGA -- BVLGARI -- MORE -- </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-4" style="background-color: blanchedalmond; padding-top: 10px; padding-bottom: 5px;">
+<h2><center>EDITOR'S PICKS</center></h2>
+</div>
+<div class="container my-3">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="card 6.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="350"/><div class="d-flex p-2" style="background-color: blanchedalmond;"><strong><h5 id="left">BUILD 
+            THE
+          THRILL</h5></strong>
+            <span class="text-muted" id="right"> Introducing Norqain and its defining collections</span></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="card 7.jpg" class="bd-placeholder-img card-img-top"  width="100%" height="350"/><div class="d-flex p-2" style="background-color: blanchedalmond;"><strong><h5 id="left">GO BIG 
+            OR GO
+          HOME</h5></strong>
+            <span class="text-muted" id="right"> Introducing Carl F. Bucherer's Manero Peripheral</span></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="card 10.jpg" class="bd-placeholder-img card-img-top" width="100%" height="350"/><div class="d-flex p-2" style="background-color: blanchedalmond;"><strong><h5 id="left">BE-
+            FRIEND 
+            YOUR
+          PERSUIT</h5></strong>
+            <span class="text-muted" id="right"> Introducing Baume & Mercier’s Contemporary</span></div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="card 9.jpg" class="bd-placeholder-img card-img-top" width="100%" height="350"/><div class="d-flex p-2" style="background-color: blanchedalmond;">
+            <strong><h5 id="left">SEIZE YOUR OWN STYLE</h5></strong><span class="text-muted" id="right">The Week With <br />The New MeisterSinger Astroscope</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 40px;">
+        <div class="row featurette d-flex justify-content-center align-items-center my-5">
+            <div class="col-md-7 order-md-1">
+              <h6 class="featurette-heading fw-normal lh-1"><i>REVIEW&nbsp;-&nbsp;</i> <span class="text-muted">Going Places: Carl F. Bucherer, With The Heritage BiCompax Annual Hometown Edition</span></h6><br />
+              <h6 class="featurette-heading fw-normal lh-1"><i>REVIEW&nbsp;-&nbsp;</i> <span class="text-muted">Time And Tide Wait For None: Presenting Maurice Lacroix’s Aikon #Tide</span></h6><br />
+              <h6 class="featurette-heading fw-normal lh-1"><i>FEATURE&nbsp;-&nbsp;</i> <span class="text-muted">What Lies Beneath—Introducing Doxa And Its Iconic Dive Timers</span></h6>
+            </div>
+            <div class="col-md-5">
+              <img src="article 1.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" />
+            </div>
+      </div>
+      <div class="row featurette d-flex justify-content-center align-items-center my-5">
+            <div class="col-md-7">
+              <h6 class="featurette-heading fw-normal lh-1"><i>REVIEW&nbsp;-&nbsp;</i> <span class="text-muted">The Buck Stops Here: Introducing The Oris Big Crown X Cervo Volante Watches</span></h6><br />
+              <h6 class="featurette-heading fw-normal lh-1"><i>ROUND UP&nbsp;-&nbsp;</i> <span class="text-muted">Seven Magnificent Timepieces From Louis Moinet That Exemplify Their Retro-Luxe Charm</span></h6><br />
+              <h6 class="featurette-heading fw-normal lh-1"><i>REVIEW&nbsp;-&nbsp;</i> <span class="text-muted">Introducing Graham’s Latest Chronograph—The Fortress Monopusher Limited Edition</span></h6>
+            </div>
+            <div class="col-md-5">
+              <img src="article 2.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"/>
+            </div>
+      </div>
+      <div class="row featurette d-flex justify-content-center align-items-center my-5">
+            <div class="col-md-7 order-md-1">
+              <h6 class="featurette-heading fw-normal lh-1"><i>ROUND UP&nbsp;-&nbsp;</i> <span class="text-muted">Presenting Five Astronomical Timepieces From Bovet That Celebrate The Celestial World</span></h6><br />
+              <h6 class="featurette-heading fw-normal lh-1"><i>REVIEW&nbsp;-&nbsp;</i> <span class="text-muted">A Space Odyssey: Here’s Why Louis Moinet’s Moon And Mars Timepieces Are Truly Out Of This World</span></h6><br />
+              <h6 class="featurette-heading fw-normal lh-1"><i>ROUND UP&nbsp;-&nbsp;</i> <span class="text-muted">As The World Turns: Seven Wonderful World-Timer Watches</span></h6>
+            </div>
+            <div class="col-md-5">
+              <img src="article 3.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" />
+            </div>
+      </div>
+      <div class="row featurette d-flex justify-content-center align-items-center my-5">
+            <div class="col-md-7">
+              <h6 class="featurette-heading fw-normal lh-1"><i>REVIEW&nbsp;-&nbsp;</i> <span class="text-muted">Platinum Class: The Latest Torchbearer For The Nomos Tangente Neomatik Series</span></h6><br />
+              <h6 class="featurette-heading fw-normal lh-1"><i>REVIEW&nbsp;-&nbsp;</i> <span class="text-muted">Redefining The Language Of Telling Time: Urwerk’s UR-210 Red Gold</span></h6><br />
+              <h6 class="featurette-heading fw-normal lh-1"><i>ROUND UP&nbsp;-&nbsp;</i> <span class="text-muted">Mega Cool: The Latest From H. Moser & Cie.’s Diverse Pioneer Centre Seconds Line Of Classic Sport Watches</span></h6>
+            </div>
+            <div class="col-md-5">
+              <img src="article 5.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" />
+            </div>
+      </div>
+    </div>
+  <hr>
+    <div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3" id="footer">
+        <h5>LUXURY WATCHES</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rolex</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Panerai</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Omega</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rado</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">IWC</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>CATEGORIES</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SPECIAL OFFERS</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">WATCHES FOR MEN</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">WATCHES FOR WOMEN</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PREMIUM BRANDS</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>COMPANY</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="E:\Web Dev\HTML files\Product about.html" class="nav-link p-0 text-muted">About ZoneWatches</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Support</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Service & Repair</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <i class="fa-solid fa-envelope-open-text"></i><h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address" style="border-radius: 0%;">
+            <button class="btn btn-primary" type="button" style="background-color: #dc4535; border-radius: 0%;">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2022 ZoneWatches, Company. All rights reserved.</p>
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+    </div>
+  </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="    sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
